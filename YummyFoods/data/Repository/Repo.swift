@@ -14,7 +14,7 @@ class Repo{
     var foods = BehaviorSubject<[Foods]>(value: [Foods]())
     var foodsCart = BehaviorSubject<[FoodsCart]>(value: [FoodsCart]())
     
-    func search(searchText:String, categoryList: [Foods]){
+    func search(searchText:String, filterList: [Foods]){
             
             if (searchText == "") {
                 fetchFoods()
@@ -24,7 +24,7 @@ class Repo{
                  
                 var list = [Foods]() //empty list for adding matched elements
                 
-                for food in categoryList{
+                for food in filterList{
 
                     if let string = food.name{
                     

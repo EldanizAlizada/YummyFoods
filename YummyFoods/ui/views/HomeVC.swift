@@ -155,7 +155,7 @@ extension HomeVC: UICollectionViewDelegate,UICollectionViewDataSource,UICollecti
 
 extension HomeVC : UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        vm.search(searchText: searchText, categoryList: foodList)
+        vm.search(searchText: searchText, filterList: foodList)
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {

@@ -26,8 +26,8 @@ class HomeVM{
     func fetchFoods() {
         repo.fetchFoods()
     }
-    func search(searchText:String, categoryList: [Foods]){
-        repo.search(searchText: searchText, categoryList: categoryList)
+    func search(searchText:String, filterList: [Foods]){
+        repo.search(searchText: searchText, filterList: filterList)
     }
 
     
